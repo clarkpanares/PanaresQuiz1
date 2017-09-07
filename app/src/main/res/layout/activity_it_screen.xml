@@ -73,7 +73,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignRight="@+id/btnSendIS"
                 android:layout_alignStart="@+id/btnSendHome"
-                android:layout_marginTop="115dp"
+                android:layout_marginTop="120dp"
                 android:alpha=".90"
                 android:ems="10"
                 android:inputType="textMultiLine"
