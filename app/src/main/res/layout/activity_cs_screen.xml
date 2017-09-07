@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iicssub"
+    tools:context="com.panares.panaresquiz1.CsScreen">
+
+    <Button
+        android:id="@+id/btnSendHome"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSendIT"
+        android:layout_alignBottom="@+id/btnSendIT"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:onClick="callIS"
+        android:text="IS" />
+
+    <Button
+        android:id="@+id/btnSendIT"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:onClick="callIT"
+        android:text="IT" />
+
+    <Button
+        android:id="@+id/IS"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSendIT"
+        android:layout_alignBottom="@+id/btnSendIT"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/btnSendIT"
+        android:layout_toStartOf="@+id/btnSendIT"
+        android:onClick="callHome"
+        android:text="HOME" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnSendHome"
+        android:layout_alignLeft="@+id/IS"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnSendHome"
+        android:layout_alignStart="@+id/IS"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="
+        B.S. COMPUTER SCIENCE (4 years)
+
+        Level I accredited by the Philippine
+        Accrediting Association of Schools,
+        Colleges, and Universities Students
+        under the BS Computer Science
+        program are highly trained for
+        software and system development.
+
+        The program’s main focus is to
+        expose the students to different
+        approaches and styles in developing
+        programs whether they are
+        procedural or the object oriented
+        type of system approach."
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:alpha=".90"
+/>
+</RelativeLayout>

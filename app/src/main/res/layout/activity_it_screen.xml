@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iicssub"
+    tools:context="com.panares.panaresquiz1.CsScreen">
+
+    <Button
+        android:id="@+id/btnSendIS"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSendCS"
+        android:layout_alignBottom="@+id/btnSendCS"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:onClick="callIS"
+        android:text="IS" />
+
+    <Button
+        android:id="@+id/btnSendCS"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:onClick="callCS"
+        android:text="CS" />
+
+    <Button
+        android:id="@+id/btnSendHome"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSendCS"
+        android:layout_alignBottom="@+id/btnSendCS"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/btnSendCS"
+        android:layout_toStartOf="@+id/btnSendCS"
+        android:onClick="callHome"
+        android:text="HOME" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnSendIS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:layout_alignEnd="@+id/btnSendIS"
+                android:layout_alignLeft="@+id/btnSendHome"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/btnSendIS"
+                android:layout_alignStart="@+id/btnSendHome"
+                android:layout_marginTop="27dp"
+                android:alpha=".90"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:text="
+                B.S. INFORMATION TECHNOLOGY
+                                   (4 years)
+                Level I accredited by the Philippine
+                Accrediting Association of Schools,
+                Colleges, and Universities
+
+                Under this program, the students are
+                trained to be well versed in the
+                practical and technical know-how of
+                installing/setting-up of computers
+                and computer networks. Special
+                skills taught include troubleshooting
+                and repairing of hardware
+                components."
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

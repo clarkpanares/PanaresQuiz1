@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iicsmain"
+    tools:context="com.panares.panaresquiz1.MainScreen">
+
+    <Button
+        android:id="@+id/btnSendCS"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="B.S. Computer Science"
+        android:onClick="callCS"
+        android:layout_marginBottom="48dp"
+        android:layout_above="@+id/btnSendIT"
+        android:layout_alignLeft="@+id/btnSendIT"
+        android:layout_alignStart="@+id/btnSendIT" />
+    <Button
+        android:id="@+id/btnSendIT"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="B.S. Information Technology"
+        android:onClick="callIT"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btnSendIS"
+        android:layout_alignStart="@+id/btnSendIS" />
+    <Button
+        android:id="@+id/btnSendIS"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="B.S. Information Systems"
+        android:onClick="callIS"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/btnSendIT"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
