@@ -43,17 +43,8 @@
         android:onClick="callHome"
         android:text="HOME" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <EditText
-                android:id="@+id/editText"
+            <TextView
+                android:id="@+id/editText2"
                 android:layout_width="match_parent"
                 android:layout_height="360dp"
                 android:layout_alignEnd="@+id/btnSendIT"
@@ -65,28 +56,31 @@
                 android:alpha=".90"
                 android:ems="10"
                 android:inputType="textMultiLine"
-                android:text="
-                B.S. INFORMATION SYSTEMS
-                                   (4 years)
-
-                Level I accredited by the Philippine
-                Accrediting Association of Schools,
-                Colleges, and Universities Students
-                under the BS Information Systems
-                program are trained to handle the
-                managerial side of computer related
-                activities.
-
-                The focus of the program is
-                effective management of resources
-                – people, money, and computer
-                facilities, especially in areas
-                involving accounting, projections
-                /estimates/feasibility studies,
-                and the like."
+                android:text="Bachelor of Science in Information Systems (4 years)"
+                android:textSize="10pt"
+                android:textAlignment="center"
                 android:textColor="#000000"
+                android:textIsSelectable="false"
                 android:textStyle="bold" />
-        </LinearLayout>
-    </ScrollView>
+
+            <TextView
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:layout_alignEnd="@+id/btnSendIT"
+                android:layout_alignLeft="@+id/btnSendHome"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/btnSendIT"
+                android:layout_alignStart="@+id/btnSendHome"
+                android:layout_marginTop="100dp"
+                android:alpha=".90"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:text="Level I accredited by the Philippine Accrediting Association of Schools, Colleges, and Universities
+Students under the BS Information Systems program are trained to handle the managerial side of computer related activities. The focus of the program is effective management of resources – people, money, and computer facilities, especially in areas involving accounting, projections/estimates/feasibility studies, and the like."
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:textStyle="bold" />
 
 </RelativeLayout>

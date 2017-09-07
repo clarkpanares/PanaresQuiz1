@@ -43,7 +43,7 @@
         android:onClick="callHome"
         android:text="HOME" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -53,26 +53,33 @@
         android:layout_alignRight="@+id/btnSendHome"
         android:layout_alignStart="@+id/IS"
         android:layout_marginTop="27dp"
+        android:alpha=".90"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:text="
-        B.S. COMPUTER SCIENCE (4 years)
-
-        Level I accredited by the Philippine
-        Accrediting Association of Schools,
-        Colleges, and Universities Students
-        under the BS Computer Science
-        program are highly trained for
-        software and system development.
-
-        The program’s main focus is to
-        expose the students to different
-        approaches and styles in developing
-        programs whether they are
-        procedural or the object oriented
-        type of system approach."
+        android:text="Bachelor of Science in Computer Science (4 years)"
+        android:textSize="10pt"
+        android:textAlignment="center"
         android:textColor="#000000"
-        android:textStyle="bold"
+        android:textIsSelectable="false"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnSendHome"
+        android:layout_alignLeft="@+id/IS"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnSendHome"
+        android:layout_alignStart="@+id/IS"
+        android:layout_marginTop="100dp"
         android:alpha=".90"
-/>
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Level I accredited by the Philippine Accrediting Association of Schools, Colleges, and Universities
+Students under the BS Computer Science program are highly trained for software and system development. The program’s main focus is to expose the students to different approaches and styles in developing programs whether they are procedural or the object oriented type of system approach."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textIsSelectable="false"
+        android:textStyle="bold" />
 </RelativeLayout>

@@ -43,21 +43,9 @@
         android:onClick="callHome"
         android:text="HOME" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/btnSendIS"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="13dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <EditText
-                android:id="@+id/editText"
+            <TextView
+                android:id="@+id/editText2"
                 android:layout_width="match_parent"
                 android:layout_height="360dp"
                 android:layout_alignEnd="@+id/btnSendIS"
@@ -69,24 +57,32 @@
                 android:alpha=".90"
                 android:ems="10"
                 android:inputType="textMultiLine"
-                android:text="
-                B.S. INFORMATION TECHNOLOGY
-                                   (4 years)
-                Level I accredited by the Philippine
-                Accrediting Association of Schools,
-                Colleges, and Universities
-
-                Under this program, the students are
-                trained to be well versed in the
-                practical and technical know-how of
-                installing/setting-up of computers
-                and computer networks. Special
-                skills taught include troubleshooting
-                and repairing of hardware
-                components."
+                android:text="Bachelor of Science in Information Technology (4 years)"
+                android:textSize="10pt"
+                android:textAlignment="center"
                 android:textColor="#000000"
+                android:textIsSelectable="false"
                 android:textStyle="bold" />
-        </LinearLayout>
-    </ScrollView>
+
+            <TextView
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:layout_alignEnd="@+id/btnSendIS"
+                android:layout_alignLeft="@+id/btnSendHome"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/btnSendIS"
+                android:layout_alignStart="@+id/btnSendHome"
+                android:layout_marginTop="120dp"
+                android:alpha=".90"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:text="Level I accredited by the Philippine Accrediting Association of Schools, Colleges, and Universities
+Under this program, the students are trained to be well versed in the practical and technical know-how of installing/setting-up of computers and computer networks. Special skills taught include troubleshooting and repairing of hardware components."
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:textStyle="bold" />
+
 
 </RelativeLayout>
